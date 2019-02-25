@@ -1,6 +1,7 @@
 # FSU Scientific Computing Github Tutorial
 [![Build
 Status](https://travis-ci.com/eitanlees/FSU-Sci-Comp-Github-Tutorial.svg?branch=master)](https://travis-ci.com/eitanlees/FSU-Sci-Comp-Github-Tutorial)
+
 A repository to practice using git/github 
 
 ## Steps to contribute 
