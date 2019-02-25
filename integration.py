@@ -6,7 +6,6 @@ A place to store methods related to integration.
 
 Currently this file includes:
     - Trapizodial Rule
-    - Gauss Legendre
 """
 
 import numpy as np
@@ -28,7 +27,6 @@ def trapezoid(f, a, b, n):
     OUTPUT:
         est   - estimation of the integral
     """
-    # Set up uniform spacing. Change this line accordingly for non-uniform
     x = np.linspace(a, b, n)
     est = 0
     for i in range(len(x) - 1):
