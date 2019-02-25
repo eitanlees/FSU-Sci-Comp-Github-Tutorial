@@ -10,11 +10,13 @@ Currently this file includes:
 
 import numpy as np
 
+
 def left_riemann():
     return
 
+
 def trapezoid(f, a, b, n):
-    """Trapezoidal quadrature to estimate int x dx from a to b using n steps
+    """Trapezoidal quadrature to estimate int x dx from a to b using n uniform steps
 
     USAGE:
         x = trapezoidal(f, a, b, n)
@@ -28,13 +30,16 @@ def trapezoid(f, a, b, n):
         est   - estimation of the integral
     """
     x = np.linspace(a, b, n)
-    est = 0
-    for i in range(len(x) - 1):
-        est += (x[i + 1] - x[i]) * (f(x[i]) + f(x[i + 1])) / 2
+    dx = x[1] - x[0]
+
+    summation = np.sum(f(x[1:-1]))
+    est = (dx / 2) * (f(a) + 2 * summation + f(b))
     return est
+
 
 def simpson_13():
     return
+
 
 def simpson_38():
     return
