@@ -11,6 +11,8 @@ Currently this file includes:
 
 import numpy as np
 
+def left_riemann():
+    return
 
 def trapezoid(f, a, b, n):
     """Trapezoidal quadrature to estimate int x dx from a to b using n steps
@@ -32,3 +34,9 @@ def trapezoid(f, a, b, n):
     for i in range(len(x) - 1):
         est += (x[i + 1] - x[i]) * (f(x[i]) + f(x[i + 1])) / 2
     return est
+
+def simpson_13():
+    return
+
+def simpson_38():
+    return
