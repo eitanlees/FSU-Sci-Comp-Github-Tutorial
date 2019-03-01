@@ -38,6 +38,17 @@ def trapezoid(f, a, b, n):
 
 
 def simpson_13():
+x = np.linsapce(a,b,n)
+h = (b-a) / n
+
+summation = 0
+
+for i in range n:
+	if(i<n):
+
+	if (i < n-1):
+
+return h / 3.0 * (b[0] + y[n] + summation
     return
 
 
