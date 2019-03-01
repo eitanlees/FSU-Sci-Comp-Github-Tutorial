@@ -48,7 +48,7 @@ def weighted_jacobi(A, x, b, omega=2 / 3, max_iter=1000):
     return x
 
 
-def gauss_sidel(A, x, b):
+def gauss_seidel(A, x, b):
     return x
 
 
